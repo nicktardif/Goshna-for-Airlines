@@ -1,7 +1,9 @@
 package com.nicktardif.seniorproject.goshnaforairlines;
 
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
@@ -13,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -23,6 +26,7 @@ public class MainActivity extends ActionBarActivity {
     private int REQUEST_CODE = 1129;
     private Button clearButton, approveButton, recordButton;
     private EditText resultsText;
+    private String SHARED_PREFS = "goshnaforairlines";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
         approveButton = (Button) findViewById(R.id.approveText);
         resultsText = (EditText) findViewById(R.id.speechResults);
 
+        // Set up our button onClick listeners
         recordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +60,26 @@ public class MainActivity extends ActionBarActivity {
                 //TODO: Set up an approval process
             }
         });
+
+        // Configure the Informational Bar text
+        refreshStatusBarText();
+    }
+
+    protected void onResume(Bundle savedInstanceState) {
+        // Configure the Informational Bar text
+        refreshStatusBarText();
+    }
+
+    public void refreshStatusBarText() {
+        TextView airportText = (TextView) findViewById(R.id.airport_id_text);
+        TextView gateText = (TextView) findViewById(R.id.gate_id_text);
+
+        SharedPreferences sharedPreferences = this.getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
+        String airportString = sharedPreferences.getString("airport_string", "Airport Not Saved");
+        String gateString = sharedPreferences.getString("gate_string", "Gate Not Saved");
+
+        airportText.setText(airportString);
+        gateText.setText(gateString);
     }
 
     @Override
@@ -85,13 +110,11 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public boolean poop() {
-        return false;
     }
 }
