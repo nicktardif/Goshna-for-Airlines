@@ -18,7 +18,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.IdResponse;
+import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.Message;
+import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.MessageResponse;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+
+import retrofit.Callback;
+import retrofit.RestAdapter;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -27,6 +39,41 @@ public class MainActivity extends ActionBarActivity {
     private Button clearButton, approveButton, recordButton;
     private EditText resultsText;
     private String SHARED_PREFS = "goshnaforairlines";
+
+    private int airport_id;
+    private int gate_id;
+
+    private GoshnaApiService api;
+
+    private Callback<IdResponse> idResponseCallback = new Callback<IdResponse>() {
+        @Override
+        public void success(IdResponse idResponse, Response response) {
+            System.out.println(idResponse.toString());
+        }
+
+        @Override
+        public void failure(RetrofitError error) {
+            System.err.println("IdResponse was a failure, error: " + error.toString());
+        }
+    };
+
+    private Callback<MessageResponse> getMessagesCallback = new Callback<MessageResponse>() {
+        @Override
+        public void success(MessageResponse messageResponse, Response response) {
+            System.out.println(messageResponse.toString());
+            resultsText.setText("");
+
+            showToast("Success: Message was sent to the server!");
+        }
+
+        @Override
+        public void failure(RetrofitError error) {
+            System.err.println("MessageResponse was a failure");
+
+            showToast("ERROR: Message was not sent to the server");
+        }
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,36 +85,29 @@ public class MainActivity extends ActionBarActivity {
         approveButton = (Button) findViewById(R.id.approveText);
         resultsText = (EditText) findViewById(R.id.speechResults);
 
+        // Set up our API service with Retrofit
+        RestAdapter restAdapter = new RestAdapter.Builder()
+                .setEndpoint("http://45.55.132.122:5000/goshna/api")
+                .setLogLevel(RestAdapter.LogLevel.FULL)
+                .build();
+        api = restAdapter.create(GoshnaApiService.class);
+
         // Set up our button onClick listeners
-        recordButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                startActivityForResult(intent, REQUEST_CODE);
-            }
-        });
-
-        clearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resultsText.setText("");
-            }
-        });
-
-        approveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //TODO: Set up an approval process
-            }
-        });
+        setOnClickListeners();
 
         // Configure the Informational Bar text
         refreshStatusBarText();
+
+        Log.d("ticknardif", "onCreate was called");
     }
 
-    protected void onResume(Bundle savedInstanceState) {
+    public void onResume() {
+        super.onResume();
+
         // Configure the Informational Bar text
         refreshStatusBarText();
+
+        Log.d("ticknardif", "onResume was called");
     }
 
     public void refreshStatusBarText() {
@@ -77,9 +117,57 @@ public class MainActivity extends ActionBarActivity {
         SharedPreferences sharedPreferences = this.getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         String airportString = sharedPreferences.getString("airport_string", "Airport Not Saved");
         String gateString = sharedPreferences.getString("gate_string", "Gate Not Saved");
+        airport_id = sharedPreferences.getInt("airport_id", -1);
+        gate_id = sharedPreferences.getInt("gate_id", -1);
 
         airportText.setText(airportString);
         gateText.setText(gateString);
+    }
+
+    // This function sets up the onclick listeners for our button pushes
+    private void setOnClickListeners() {
+
+        // Set up the listener to start recording your voice
+        recordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+
+        // Set up the listener to clear the textbox
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resultsText.setText("");
+            }
+        });
+
+        // Set up the listener to send the Message to the server
+        approveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String speech = ((EditText) findViewById(R.id.speechResults)).getText().toString();
+
+                // TODO: Get the real time
+                String time = "11:34 PM";
+
+                // TODO: Get the real flight ID
+                int flight_id = 432;
+
+                Message message = new Message(flight_id, speech, time);
+                api.sendMessage(message, idResponseCallback);
+            }
+        });
+    }
+
+    private void showToast(String text) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     @Override
@@ -92,7 +180,6 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
