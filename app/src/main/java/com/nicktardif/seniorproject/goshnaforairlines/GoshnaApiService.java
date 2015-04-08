@@ -3,15 +3,11 @@ package com.nicktardif.seniorproject.goshnaforairlines;
 import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.AirportResponse;
 import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.GateResponse;
 import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.IdResponse;
-import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.Message;
 import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.MessageResponse;
-
-import java.util.List;
 
 import retrofit.Callback;
 import retrofit.http.Body;
 import retrofit.http.GET;
-import retrofit.http.Headers;
 import retrofit.http.POST;
 
 /**
@@ -24,7 +20,7 @@ public interface GoshnaApiService {
     void getMessages(Callback<MessageResponse> response);
 
     @POST("/messages")
-    void sendMessage(@Body Message body, Callback<IdResponse> response);
+    void sendMessage(@Body GateMessage message, Callback<IdResponse> response);
 
     @GET("/airports")
     void getAllAirports(Callback<AirportResponse> response);

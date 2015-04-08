@@ -1,12 +1,9 @@
 package com.nicktardif.seniorproject.goshnaforairlines;
 
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
-import android.speech.SpeechRecognizer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,13 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.IdResponse;
-import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.Message;
 import com.nicktardif.seniorproject.goshnaforairlines.ApiResponses.MessageResponse;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import retrofit.Callback;
 import retrofit.RestAdapter;
@@ -49,6 +43,8 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void success(IdResponse idResponse, Response response) {
             System.out.println(idResponse.toString());
+
+            showToast("Message saved to the server!");
         }
 
         @Override
@@ -150,13 +146,13 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 String speech = ((EditText) findViewById(R.id.speechResults)).getText().toString();
 
-                // TODO: Get the real time
-                String time = "11:34 PM";
+                // Get the minute of the day
+                Calendar now = Calendar.getInstance();
+                int hour = now.get(Calendar.HOUR_OF_DAY);
+                int minute = now.get(Calendar.MINUTE);
+                int time = hour * 60 + minute;
 
-                // TODO: Get the real flight ID
-                int flight_id = 432;
-
-                Message message = new Message(flight_id, speech, time);
+                GateMessage message = new GateMessage(speech, time, airport_id, gate_id);
                 api.sendMessage(message, idResponseCallback);
             }
         });

@@ -1,4 +1,4 @@
-package com.nicktardif.seniorproject.goshnaforairlines.ApiResponses;
+package com.nicktardif.seniorproject.goshnaforairlines;
 
 /**
  * Created by tick on 4/7/15.

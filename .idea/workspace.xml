@@ -43,17 +43,27 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9437086" vertical-offset="1230" max-vertical-offset="3195">
-              <caret line="120" column="14" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.2746114" vertical-offset="2556" max-vertical-offset="3135">
+              <caret line="181" column="34" selection-start-line="181" selection-start-column="34" selection-end-line="181" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4493#4757#0" expanded="true" />
-                <element signature="e#4746#4747#0" expanded="true" />
-                <element signature="e#4852#5009#0" expanded="true" />
-                <element signature="e#4998#4999#0" expanded="true" />
-                <element signature="e#5119#5642#0" expanded="true" />
-                <element signature="e#5631#5632#0" expanded="true" />
+                <element signature="e#4319#4583#0" expanded="true" />
+                <element signature="e#4572#4573#0" expanded="true" />
+                <element signature="e#4678#4835#0" expanded="true" />
+                <element signature="e#4824#4825#0" expanded="true" />
+                <element signature="e#4945#5575#0" expanded="true" />
+                <element signature="e#5564#5565#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GateMessage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GateMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,8 +71,8 @@
       <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="2625">
-              <caret line="93" column="71" selection-start-line="93" selection-start-column="71" selection-end-line="93" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2625">
+              <caret line="96" column="83" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2900#4052#0" expanded="true" />
@@ -72,11 +82,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MessageResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/MessageResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AirportResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/AirportResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GoshnaApiService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GoshnaApiService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -774,16 +816,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/Airport.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/Gate.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/GateResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GoshnaApiService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GateMessage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GoshnaApiService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/SettingsActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1919" />
-    <option name="width" value="1922" />
-    <option name="height" value="1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -952,6 +994,9 @@
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nicktardif.seniorproject.goshnaforairlines" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -1125,7 +1170,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="0" width="1922" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1141,10 +1186,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33770493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1186,12 +1231,12 @@
           <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1232,12 +1277,12 @@
           <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1278,12 +1323,12 @@
           <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1324,12 +1369,12 @@
           <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1370,12 +1415,12 @@
           <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1416,12 +1461,12 @@
           <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1490,14 +1535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/MessageResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
@@ -1522,16 +1559,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/AirportResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1566,9 +1593,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/Message.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GateMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29801324" vertical-offset="0" max-vertical-offset="604">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/MessageResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/ApiResponses/AirportResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
         </state>
@@ -1576,8 +1629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/GoshnaApiService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1586,8 +1639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="2625">
-          <caret line="93" column="71" selection-start-line="93" selection-start-column="71" selection-end-line="93" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2625">
+          <caret line="96" column="83" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2900#4052#0" expanded="true" />
@@ -1598,16 +1651,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nicktardif/seniorproject/goshnaforairlines/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9437086" vertical-offset="1230" max-vertical-offset="3195">
-          <caret line="120" column="14" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.2746114" vertical-offset="2556" max-vertical-offset="3135">
+          <caret line="181" column="34" selection-start-line="181" selection-start-column="34" selection-end-line="181" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4493#4757#0" expanded="true" />
-            <element signature="e#4746#4747#0" expanded="true" />
-            <element signature="e#4852#5009#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5119#5642#0" expanded="true" />
-            <element signature="e#5631#5632#0" expanded="true" />
+            <element signature="e#4319#4583#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4678#4835#0" expanded="true" />
+            <element signature="e#4824#4825#0" expanded="true" />
+            <element signature="e#4945#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
