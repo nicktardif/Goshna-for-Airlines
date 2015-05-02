@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <color name="lightest_green">#A8E392</color>
+    <color name="my_green">#6CBD4D</color>
+    <color name="dark_green">#54A835</color>
+    <color name="darkest_green">#409321</color>
+
+    <color name="lightest_blue">#7CA1BB</color>
+    <color name="light_blue">#5882A0</color>
+    <color name="my_blue">#3F6D8E</color>
+
+    <color name="lightest_yellow">#FCFEA3</color>
+    <color name="lighter_yellow">#F5F881</color>
+
+    <color name="delta_red">#C50D43</color>
+</resources>

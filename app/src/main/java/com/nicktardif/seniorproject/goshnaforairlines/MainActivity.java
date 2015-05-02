@@ -45,6 +45,9 @@ public class MainActivity extends ActionBarActivity {
             System.out.println(idResponse.toString());
 
             showToast("Message saved to the server!");
+
+            // Clear the recorded message
+            resultsText.setText("");
         }
 
         @Override
@@ -107,8 +110,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void refreshStatusBarText() {
-        TextView airportText = (TextView) findViewById(R.id.airport_id_text);
-        TextView gateText = (TextView) findViewById(R.id.gate_id_text);
+        TextView airportText = (TextView) findViewById(R.id.display_airport);
+        TextView gateText = (TextView) findViewById(R.id.display_gate);
 
         SharedPreferences sharedPreferences = this.getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         String airportString = sharedPreferences.getString("airport_string", "Airport Not Saved");
@@ -116,8 +119,8 @@ public class MainActivity extends ActionBarActivity {
         airport_id = sharedPreferences.getInt("airport_id", -1);
         gate_id = sharedPreferences.getInt("gate_id", -1);
 
-        airportText.setText(airportString);
-        gateText.setText(gateString);
+        airportText.setText("Airport: " + airportString);
+        gateText.setText("Gate: " + gateString);
     }
 
     // This function sets up the onclick listeners for our button pushes
