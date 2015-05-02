@@ -152,7 +152,7 @@ public class MainActivity extends ActionBarActivity {
                 int minute = now.get(Calendar.MINUTE);
                 int time = hour * 60 + minute;
 
-                GateMessage message = new GateMessage(speech, time, airport_id, gate_id);
+                GateMessage message = new GateMessage(speech, time, gate_id, airport_id);
                 api.sendMessage(message, idResponseCallback);
             }
         });
