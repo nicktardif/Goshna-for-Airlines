@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/lighter_yellow"
+    tools:context="com.nicktardif.seniorproject.goshnaforairlines.AboutActivity">
+
+    <TextView
+        android:text="About Goshna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/about_goshna"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/goshna_airline_logo"
+        android:layout_below="@id/about_goshna"
+        android:id="@+id/about_logo"/>
+
+    <TextView
+        android:text="Developed in the spring of 2015 at the University of Florida by Nick Tardif under the guidance of Dr. Sumi Helal."
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/about_logo"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_text1"/>
+
+    <TextView
+        android:text="Special thanks to the Android Documentation team, the amazing Retrofit library, and Python Flask developers for making this project possible."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_text1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/about_text2"/>
+
+</RelativeLayout>
